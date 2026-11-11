@@ -10,3 +10,204 @@
 .portrait-shade{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(7,9,15,.28),transparent 36%,rgba(7,9,15,.72))}
 .portrait-card .card-top,.portrait-card .card-bottom{z-index:2}
 @media(max-width:800px){.creator-portrait{object-position:center 22%}}
+
+/* ==================================
+   CHITTRANSH GAUTAM — LUXURY UPGRADE
+================================== */
+
+:root {
+  --bg: #070709;
+  --panel: #111116;
+  --text: #faf8fb;
+  --muted: #a5a1ad;
+  --accent: #ff3d91;
+  --accent-light: #ff78b2;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 75% 5%, #341326 0%, transparent 38%),
+    #070709 !important;
+  color: var(--text);
+}
+
+::selection {
+  background: #ff3d91;
+  color: #fff;
+}
+
+.nav-wrap {
+  background: rgba(7,7,9,.82);
+  backdrop-filter: blur(22px);
+  border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.brand {
+  letter-spacing: .16em;
+}
+
+.brand-mark {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1,
+.section-title,
+.collab-section h2 {
+  letter-spacing: -.055em;
+  line-height: 1.02;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    110deg,
+    #fff 5%,
+    #ff78b2 48%,
+    #ff3190 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-intro {
+  color: #b8b3c0;
+  line-height: 1.9;
+}
+
+.button {
+  border-radius: 12px;
+  transition: transform .3s ease,
+              box-shadow .3s ease,
+              background .3s ease;
+}
+
+.button-primary {
+  background: linear-gradient(120deg,#ff3d91,#d91c70);
+  box-shadow: 0 10px 35px rgba(255,61,145,.2);
+  color: #fff;
+}
+
+.button-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 45px rgba(255,61,145,.35);
+}
+
+.button-quiet {
+  border-color: rgba(255,255,255,.2);
+}
+
+.hero-card {
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow: 0 25px 90px rgba(0,0,0,.5);
+}
+
+.float-tag {
+  border: 1px solid rgba(255,61,145,.35);
+  background: rgba(20,16,27,.92);
+  backdrop-filter: blur(15px);
+}
+
+.section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.section-title {
+  font-weight: 750;
+}
+
+.section-label {
+  color: var(--accent-light);
+  letter-spacing: .18em;
+}
+
+.about-grid,
+.work-card,
+.social-grid {
+  gap: 24px;
+}
+
+.work-card {
+  background: linear-gradient(145deg,#17151d,#0d0d11);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 20px;
+  transition: transform .3s ease,
+              border-color .3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255,61,145,.55);
+}
+
+.social-links a {
+  border-bottom: 1px solid rgba(255,255,255,.13);
+  transition: color .25s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-light);
+}
+
+.collab-section {
+  background:
+    radial-gradient(ellipse at 50% 100%,
+    rgba(255,61,145,.17), transparent 65%),
+    #111016;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.collab-section h2 {
+  font-weight: 800;
+}
+
+.footer {
+  border-top: 1px solid rgba(255,255,255,.1);
+  color: var(--muted);
+}
+
+.reveal {
+  transition: opacity .7s ease,
+              transform .7s ease;
+}
+
+@media(max-width:800px) {
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px,12vw,76px);
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .button {
+    min-height: 56px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
