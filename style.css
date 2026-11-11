@@ -211,3 +211,75 @@ body {
     transition-duration: .01ms !important;
   }
 }
+
+/* LUXURY HISTORICAL REACH */
+.reach-section {
+  padding: 110px 0;
+  background: radial-gradient(ellipse at center, #351020 0%, #09090b 70%);
+  overflow: hidden;
+}
+
+.reach-section .section-label {
+  color: #ff3d91;
+  letter-spacing: 4px;
+}
+
+.reach-section .section-title {
+  color: #fff;
+  margin: 25px 0;
+}
+
+.reach-note {
+  color: #ff78b2;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+.reach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.reach-card {
+  padding: 45px 25px;
+  background: linear-gradient(145deg, #191019, #0c0b10);
+  border: 1px solid rgba(255, 61, 145, .35);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: .4s ease;
+  box-shadow: 0 10px 40px rgba(255, 30, 120, .08);
+}
+
+.reach-card:hover {
+  transform: translateY(-9px);
+  border-color: #ff3d91;
+  box-shadow: 0 15px 50px rgba(255, 30, 120, .2);
+}
+
+.reach-number {
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 800;
+  color: #ff4b9b;
+  letter-spacing: -3px;
+}
+
+.reach-label {
+  color: #f5eaf0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.reach-disclaimer {
+  color: #999;
+  font-size: 11px;
+  margin-top: 25px;
+}
+
+@media(max-width:560px) {
+  .reach-section { padding: 75px 0; }
+  .reach-grid { grid-template-columns: 1fr; }
+}
