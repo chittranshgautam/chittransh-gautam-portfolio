@@ -26,3 +26,18 @@
 .reach-disclaimer{font-size:10px;color:#7f8797;margin:17px 0 0}
 @media(max-width:800px){.mimicry-grid{grid-template-columns:1fr;gap:30px}.reach-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.reach-section{padding:75px 0}.reach-grid{grid-template-columns:1fr}.reach-card{min-height:115px}.mimicry-section{padding-top:80px;padding-bottom:80px}}
+
+/* Mobile hero card cleanup */
+@media (max-width: 560px) {
+  .tag-top,
+  .tag-bottom,
+  .spark-b {
+    display: none !important;
+  }
+
+  .portrait-card .card-top,
+  .portrait-card .card-bottom {
+    position: relative;
+    z-index: 4;
+  }
+}
